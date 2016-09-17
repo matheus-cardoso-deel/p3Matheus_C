@@ -1,0 +1,68 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="edu.uco.mcamposcardoso.p3matheus_c.LogActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:background="#228556"
+        android:weightSum="2">
+
+    <TextView android:text="#"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:layout_marginLeft="3dp"
+        android:layout_weight="1"
+        android:id="@+id/txtHashTag" />
+
+    <TextView android:text="Winner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#228556"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:layout_weight="1"
+        android:id="@+id/txtWinner" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#228556"
+        android:weightSum="2">
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#228556"
+        android:textColor="#FFFFFF"
+        android:layout_marginLeft="3dp"
+        android:id="@+id/listMatches"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#228556"
+        android:textColor="#FFFFFF"
+        android:layout_weight="1"
+        android:id="@+id/listWinners"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+        </LinearLayout>
+</LinearLayout>
